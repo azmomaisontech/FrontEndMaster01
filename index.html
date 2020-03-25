@@ -13,7 +13,8 @@
       href="https://fonts.googleapis.com/css?family=Public+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
@@ -32,14 +33,40 @@
           </ul>
         </div>
         <div class="request-invite">
-          <a href="/request-invite" class="btn btn-sm btn-primary"
-            >Request Invite</a
-          >
+          <a href="/request-invite" class="btn btn-primary">Request Invite</a>
         </div>
+      </div>
+    </nav>
+    <nav id="mobile-nav">
+      <div class="container">
+        <div class="logo">
+          <a href="/"> <img src="./images/logo.svg" alt="Company Logo" /> </a>
+        </div>
+        <div class="toggle-btn" onclick="toggleSidebar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="dropdownlist">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
       </div>
     </nav>
     <main id="main-header">
       <div class="container">
+        <div class="right-header">
+          <img
+            className="testing"
+            src="./images/image-mockups.png"
+            alt="Phones"
+          />
+        </div>
         <div class="left-header">
           <h1>
             <span> Next Generation </span> <br />
@@ -50,22 +77,19 @@
             one-stop-shop for spending, saving, budgting, investing, and much
             more.
           </p>
-          <a href="/request-invite" class="btn btn-sm btn-primary"
-            >Request Invite</a
-          >
+          <div>
+            <a href="/request-invite" class="btn  btn-primary"
+              >Request Invite</a
+            >
+          </div>
         </div>
-        <img
-          className="testing"
-          src="./images/image-mockups.png"
-          alt="Phones"
-        />
       </div>
     </main>
 
     <section id="about">
       <div class="container">
-        <h2>Why choose EasyBank</h2>
-        <p>
+        <h2>Why choose EasyBank ?</h2>
+        <p class="text-center">
           We leverage Open Banking to turn your bank account into your financial
           hub.<br />
           Control your financies like never before.
@@ -116,7 +140,9 @@
             </div>
             <div class="write-up">
               <p>By Clarke Robinson</p>
-              <h4>Receive money in any currency with no fees</h4>
+              <h4>
+                <a href="#">Receive money in any currency with no fees</a>
+              </h4>
               <p>
                 The world is getting smaller and we're becoming more mobile. So
                 why should you be forced to only receive money in a single....
@@ -129,7 +155,9 @@
             </div>
             <div class="write-up">
               <p>By Clarke Robinson</p>
-              <h4>Treat yourself without worrying about money</h4>
+              <h4>
+                <a href="#">Treat yourself without worrying about money</a>
+              </h4>
               <p>
                 Our simple budgeting feature allows you to separate out your
                 spending and set realisticlimits each month. That means you ...
@@ -142,7 +170,7 @@
             </div>
             <div class="write-up">
               <p>By Clarke Robinson</p>
-              <h4>Take your Easybank card whereever you go</h4>
+              <h4><a href="#">Take your Easybank card whereever you go</a></h4>
               <p>
                 We want you to enjoy your travels. This is why we don't charge
                 any fees on purchases whle you're abroad. We'll even show you
@@ -156,7 +184,9 @@
             </div>
             <div class="write-up">
               <p>By Clarke Robinson</p>
-              <h4>Our invite-only Beta accounts are now live!</h4>
+              <h4>
+                <a href="#"> Our invite-only Beta accounts are now live!</a>
+              </h4>
               <p>
                 After a lot of hard work by the whole team, we're excited to
                 launch our closed beta. It's easy to request an invite through
@@ -245,7 +275,7 @@
           <ul>
             <li><a href="#"> Career</a></li>
             <li><a href="#">Support </a></li>
-            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
 
@@ -257,5 +287,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
